@@ -1,0 +1,398 @@
+.highlight {
+  display: inline-block;
+  transition: all 0.1s ease;
+  padding-right: 3%;
+}
+.highlight:hover {
+  transform: translateY(-10px);
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: monospace;
+  color: #fcfcfc;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2%;
+}
+.nav-container .navbar {
+  height: 40px;
+  width: 25%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-container .navbar a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: monospace;
+  color: #292929;
+}
+
+.hero {
+  width: 100%;
+  padding-top: 10%;
+  display: flex;
+}
+.hero .hero-left {
+  flex: 1;
+}
+.hero .hero-left h1 {
+  font-size: 6rem;
+  color: #292929;
+  width: 78%;
+  border-radius: 10px;
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+}
+.hero .hero-left h2 {
+  font-size: 4rem;
+}
+.hero .hero-left h3 {
+  font-size: 4rem;
+}
+.hero .hero-left .links {
+  height: 50px;
+  display: flex;
+  align-items: end;
+  gap: 3%;
+}
+.hero .hero-left .links a {
+  text-decoration: none;
+  color: #292929;
+}
+.hero .hero-right {
+  position: relative;
+}
+.hero .hero-right video {
+  position: relative;
+}
+.hero .hero-right .shadow {
+  position: absolute;
+  filter: blur(5px);
+  border-radius: 100%;
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+  height: 40px;
+  width: 200px;
+  top: 100%;
+  left: 0%;
+  transform: translate(85%, -130%);
+  opacity: 0.3;
+  animation-name: shadow-width;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+}
+
+.work-container {
+  width: 100%;
+  padding-top: 7%;
+}
+.work-container .project-cards-container {
+  width: 100%;
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.work-container h3 {
+  font-size: 3rem;
+}
+
+.project-card {
+  height: 400px;
+  position: relative;
+  margin: 1%;
+  border-radius: 14px;
+  padding: 2%;
+  background: #fcfcfc;
+  scale: 1;
+  transition: all 0.2s ease;
+  border: 3px solid black;
+  scale: 0.95;
+}
+.project-card:hover {
+  scale: 1;
+}
+.project-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.project-card .overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.project-card .overlay .notch {
+  height: 30px;
+  width: 10%;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-card .overlay .notch .cam {
+  height: 10px;
+  width: 10px;
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+  border-radius: 100%;
+}
+.project-card .overlay .icon-bar {
+  height: 45px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10%;
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+  border-radius: 10px;
+}
+
+.contact-container {
+  width: 100%;
+  padding-top: 15%;
+  display: flex;
+  justify-content: end;
+}
+.contact-container .contact-left {
+  position: relative;
+}
+.contact-container .contact-left video {
+  position: relative;
+}
+.contact-container .contact-left .shadow {
+  position: absolute;
+  filter: blur(5px);
+  border-radius: 100%;
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+  height: 40px;
+  width: 200px;
+  top: 100%;
+  left: 0%;
+  transform: translate(85%, -130%);
+  opacity: 0.3;
+  animation-name: shadow-width;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+}
+.contact-container .lets-work {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5%;
+}
+.contact-container .lets-work .content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.contact-container .lets-work .content h4 {
+  font-size: 6rem;
+  text-align: end;
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+  border-radius: 10px;
+}
+.contact-container .lets-work .content p {
+  width: 75%;
+  text-align: end;
+}
+.contact-container .lets-work .socials {
+  height: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: end;
+  gap: 2%;
+}
+.contact-container .lets-work .cv {
+  height: 50px;
+  width: 35%;
+  display: flex;
+  justify-content: end;
+  gap: 2%;
+}
+
+.about-container {
+  padding-top: 10%;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.about-container h3 {
+  font-size: 3rem;
+}
+.about-container .content-grid {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 2.5%;
+}
+.about-container .content-grid .text-block {
+  padding: 5% 0%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.about-container .content-grid .text-block h4 {
+  font-size: 2rem;
+  color: #292929;
+  width: 80%;
+  padding: 1%;
+  border-radius: 10px;
+}
+.about-container .content-grid .text-block p {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+.about-container .content-grid .text-block .links {
+  display: flex;
+  justify-content: space-between;
+}
+.about-container .content-grid .text-block-large {
+  padding: 5% 0%;
+  width: 80%;
+}
+.about-container .content-grid .text-block-large p {
+  font-size: 3rem;
+}
+
+.icon-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+.icon-button:hover {
+  transform: translateY(-1px);
+  height: 37px;
+  padding-bottom: 0.25%;
+  border-top: 1px solid #c7ffb4;
+  border-left: 1px solid #c7ffb4;
+  border-right: 1px solid #c7ffb4;
+  background-color: #c7ffb4;
+}
+.icon-button:active {
+  transform: translateY(0px);
+  height: 35px;
+  padding-bottom: 0%;
+  border-top: 1px solid #c7ffb4;
+  border-left: 1px solid #c7ffb4;
+  border-right: 1px solid #c7ffb4;
+  background-color: #c7ffb4;
+}
+.icon-button .button {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #292929;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-button .button:hover {
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+}
+.icon-button .button:active {
+  background: linear-gradient(16deg, rgb(41, 41, 41) 54%, rgb(163, 70, 146) 100%);
+  box-shadow: 0px 0.5px 0px 0px #c7ffb4 inset;
+  -webkit-box-shadow: 0px 0.5px 0px 0px #c7ffb4 inset;
+  -moz-box-shadow: 0px 0.5px 0px 0px #c7ffb4 inset;
+}
+.icon-button .button img {
+  height: 50%;
+  width: 50%;
+  filter: invert(100%);
+}
+
+.icon-button-large {
+  height: 55px;
+  width: 55px;
+}
+.icon-button-large:hover {
+  transform: translateY(-3px);
+  padding-bottom: 1%;
+  height: 60px;
+}
+
+.button-container {
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+.button-container:hover {
+  transform: translateY(-3px);
+  height: 45px;
+  padding-bottom: 1%;
+  border-top: 1px solid #c7ffb4;
+  border-left: 1px solid #c7ffb4;
+  border-right: 1px solid #c7ffb4;
+  background-color: #c7ffb4;
+}
+.button-container:active {
+  transform: translateY(1px);
+  height: 40px;
+  padding-bottom: 0%;
+  border-top: 1px solid #c7ffb4;
+  border-left: 1px solid #c7ffb4;
+  border-right: 1px solid #c7ffb4;
+  background-color: #c7ffb4;
+}
+.button-container .button {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #292929;
+  color: #fcfcfc;
+  border: none;
+  outline: none;
+}
+.button-container .button p {
+  font-size: 1.1rem;
+}
+.button-container .button:hover {
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+}
+.button-container .button:active {
+  background: linear-gradient(192deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+  box-shadow: 0px 1px 0px 0px #c7ffb4 inset;
+  -webkit-box-shadow: 0px 1px 0px 0px #c7ffb4 inset;
+  -moz-box-shadow: 0px 1px 0px 0px #c7ffb4 inset;
+}
+
+@keyframes shadow-width {
+  0% {
+    width: 200px;
+  }
+  50% {
+    width: 190px;
+  }
+  100% {
+    width: 200px;
+  }
+}/*# sourceMappingURL=Components.css.map */
