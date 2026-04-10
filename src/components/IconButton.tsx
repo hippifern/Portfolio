@@ -16,7 +16,7 @@ export const IconButton = ({
   return (
     <>
       {linkable ? (
-        <a href={link}>
+        <a className="linkable-icon-button" href={link}>
           <div
             className={!large ? "icon-button" : "icon-button icon-button-large"}
           >
@@ -26,7 +26,9 @@ export const IconButton = ({
           </div>
         </a>
       ) : (
-        <div className="icon-button">
+        <div
+          className={!large ? "icon-button" : "icon-button icon-button-large"}
+        >
           <button className="button">
             <img src={source} alt="" />
           </button>

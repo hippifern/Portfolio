@@ -21,19 +21,19 @@ export const Hero = () => {
           <IconButton
             source={github}
             linkable={true}
-            link="https://github.com"
+            link="https://github.com/hippifern"
             large={false}
           />
           <IconButton
             source={linkedin}
             linkable={true}
-            link="ttps://github.com"
+            link="https://www.linkedin.com/in/kie-croft/"
             large={false}
           />
           <IconButton
             source={bluesky}
             linkable={true}
-            link="ttps://github.com"
+            link="https://bsky.app/"
             large={false}
           />
         </div>

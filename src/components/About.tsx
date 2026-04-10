@@ -1,12 +1,19 @@
 import "../css/Components.css";
 import { IconButton } from "./IconButton";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
-import bluesky from "../assets/bluesky.png";
+import chatgpt from "../assets/chatgpt.png";
+import css from "../assets/css.png";
+import gh from "../assets/github (1).png";
+import js from "../assets/javascript.png";
+import react from "../assets/react.png";
+import shopify from "../assets/shopify.png";
+import vue from "../assets/vuejs.png";
+import nodejs from "../assets/nodejs.png";
+import nextjs from "../assets/nextjs.png";
+import analytics from "../assets/analytics.png";
 
 export const About = () => {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <h3>About Me.</h3>
 
       <div className="content-grid">
@@ -18,17 +25,25 @@ export const About = () => {
         </div>
         <div className="text-block">
           <p>
-            At Sandfold Studio, I design and develop scalable front-end systems,
-            craft high-performing e-commerce builds, and bring ideas to life
-            through smooth animations and thoughtful UI. I work closely with
-            clients to turn briefs into polished, production-ready experiences
-            that don’t just look good—they perform.
+            At{" "}
+            <span className="inline-link">
+              <span className="highlight-link">Sandfold Studio,</span>
+            </span>{" "}
+            I design and develop scalable front-end systems, craft
+            high-performing e-commerce builds, and bring ideas to life through
+            smooth animations and thoughtful UI. I work closely with clients to
+            turn briefs into polished, production-ready experiences that don’t
+            just look good—they perform.
           </p>
           <p>
-            At Twinkl and in contract roles, I created landing pages and
-            campaigns that actually moved the needle. From improving Core Web
-            Vitals to doubling conversion rates and reducing drop-off, I focused
-            on the details that make a real impact. Whether it’s refining user
+            At{" "}
+            <span className="inline-link">
+              <span className="highlight-link">Twinkl</span>
+            </span>{" "}
+            and in contract roles, I created landing pages and campaigns that
+            actually moved the needle. From improving Core Web Vitals to
+            doubling conversion rates and reducing drop-off, I focused on the
+            details that make a real impact. Whether it’s refining user
             journeys, optimising performance, or tweaking layouts, I’m all about
             building websites that feel as good as they function.
           </p>
@@ -37,49 +52,85 @@ export const About = () => {
           <h4>My Tech Stack</h4>
           <div className="links">
             <IconButton
-              source={github}
-              linkable={true}
+              source={react}
+              linkable={false}
               link="https://github.com"
               large={true}
             />
             <IconButton
-              source={linkedin}
-              linkable={true}
+              source={js}
+              linkable={false}
               link="ttps://github.com"
               large={true}
             />
             <IconButton
-              source={bluesky}
-              linkable={true}
+              source={css}
+              linkable={false}
               link="ttps://github.com"
               large={true}
             />
             <IconButton
-              source={github}
-              linkable={true}
+              source={vue}
+              linkable={false}
               link="https://github.com"
               large={true}
             />
             <IconButton
-              source={linkedin}
-              linkable={true}
+              source={shopify}
+              linkable={false}
               link="ttps://github.com"
               large={true}
             />
             <IconButton
-              source={bluesky}
-              linkable={true}
+              source={gh}
+              linkable={false}
               link="ttps://github.com"
+              large={true}
+            />
+            <IconButton
+              source={chatgpt}
+              linkable={false}
+              link="https://github.com"
+              large={true}
+            />
+            <IconButton
+              source={nodejs}
+              linkable={false}
+              link="ttps://github.com"
+              large={true}
+            />
+            <IconButton
+              source={nextjs}
+              linkable={false}
+              link="ttps://github.com"
+              large={true}
+            />
+            <IconButton
+              source={analytics}
+              linkable={false}
+              link="https://github.com"
               large={true}
             />
           </div>
         </div>
         <div className="text-block">
           <h4>Certifications</h4>
-          <p>BA Digital Media & Communication - Edge Hill University</p>
-          <p>Post Graduate Degree In Education - University of Cumbria</p>
-          <p>Front End Development Nanodegree - Udacity</p>
-          <p>UX Design Professional Certification - Google</p>
+          <p>
+            BA Digital Media & Communication -{" "}
+            <span className="bold">Edge Hill University</span>
+          </p>
+          <p>
+            Post Graduate Degree In Education -{" "}
+            <span className="bold">University of Cumbria</span>
+          </p>
+          <p>
+            Front End Development Nanodegree -{" "}
+            <span className="bold">Udacity</span>
+          </p>
+          <p>
+            UX Design Professional Certification -{" "}
+            <span className="bold">Google</span>
+          </p>
         </div>
       </div>
     </div>

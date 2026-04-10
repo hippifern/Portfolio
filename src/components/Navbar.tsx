@@ -1,17 +1,16 @@
 import "../css/Components.css";
-import { IconButton } from "./IconButton";
 import { Link } from "./Link";
-import light from "../assets/light.png";
+import { data } from "../data/data.js";
 
 export const Navbar = () => {
+  const { navbarData } = data;
   return (
-    <div className="nav-container">
+    <div id="home" className="nav-container">
       <div className="navbar">
-        <Link text="Projects" href="https://github.com" />
-        <Link text="About Me" href="https://github.com" />
-        <Link text="Contact" href="https://github.com" />
+        {navbarData.map((item) => {
+          return <Link text={item.text} href={item.link} />;
+        })}
       </div>
-      <IconButton source={light} />
     </div>
   );
 };

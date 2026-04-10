@@ -1,7 +1,7 @@
 import "../css/Components.css";
 import { IconButton } from "./IconButton";
-import light from "../assets/light.png";
 import { Button } from "./Button";
+import top from "../assets/top.png";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import bluesky from "../assets/bluesky.png";
@@ -9,7 +9,7 @@ import video from "../assets/me.mp4";
 
 export const Contact = () => {
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <div className="contact-left">
         <video width="500" height="500" autoPlay loop muted playsInline>
           <source src={video} type="video/mp4" />
@@ -19,33 +19,33 @@ export const Contact = () => {
       <div className="lets-work">
         <div className="content">
           <h4>Let's Work.</h4>
-          <p>
-            Whether you’re launching a brand, designing a product, or elevating
-            your digital presence, we’re here to bring your vision to life.
-          </p>
+          <p>Together we can code something that makes people smile.</p>
         </div>
         <div className="socials">
           <IconButton
             source={github}
             linkable={true}
-            link="https://github.com"
+            link="https://github.com/hippifern"
             large={false}
           />
           <IconButton
             source={linkedin}
             linkable={true}
-            link="ttps://github.com"
+            link="https://www.linkedin.com/in/kie-croft/"
             large={false}
           />
           <IconButton
             source={bluesky}
             linkable={true}
-            link="ttps://github.com"
+            link="https://bsky.app/"
             large={false}
           />
         </div>
         <div className="cv">
           <Button text="Download CV" />
+        </div>
+        <div className="go-back">
+          <IconButton source={top} linkable={true} link="#home" large={false} />
         </div>
       </div>
     </div>

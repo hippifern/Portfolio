@@ -1,41 +1,45 @@
 import { ProjectCard } from "./ProjectCard";
+import imgOne from "../assets/one.png";
+import imgTwo from "../assets/two.png";
+import imgThree from "../assets/three.png";
+import imgFour from "../assets/four.png";
 
 export const Work = () => {
   return (
-    <div className="work-container">
+    <div className="work-container" id="work">
       <h3>Work.</h3>
       <div className="project-cards-container">
         <ProjectCard
-          imgSrc={
-            "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
+          imgSrc={imgOne}
           projectType={"React Web App"}
           projectName={"DungeonAI.exe"}
-          projectLink={""}
+          projectLinkLive={"https://hippifern.github.io/AI-Adventure-Game/"}
+          projectLinkGh={"https://github.com/hippifern/AI-Adventure-Game"}
         />
         <ProjectCard
-          imgSrc={
-            "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
+          imgSrc={imgTwo}
           projectType={"Shopify Store"}
           projectName={"Needle & Tide"}
-          projectLink={""}
+          projectLinkLive={"https://needleandtide.com"}
+          projectLinkGh={
+            "https://github.com/hippifern/shopify-ecommerce-development"
+          }
         />
         <ProjectCard
-          imgSrc={
-            "https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=1479&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
+          imgSrc={imgThree}
           projectType={"Framer Website"}
           projectName={"The Jump Digital"}
-          projectLink={""}
+          projectLinkLive={""}
+          projectLinkGh={""}
         />
         <ProjectCard
-          imgSrc={
-            "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
+          imgSrc={imgFour}
           projectType={"Framer Website"}
           projectName={"Sandfold Studio"}
-          projectLink={""}
+          projectLinkLive={"https://sandfoldstudio.com"}
+          projectLinkGh={
+            "https://github.com/hippifern/brand-website-redevelopment"
+          }
         />
       </div>
     </div>
