@@ -3,12 +3,10 @@ import "../css/Components.css";
 import light from "../assets/light.png";
 import github from "../assets/github.png";
 import { IconButton } from "./IconButton";
-import { useEffect, useRef } from "react";
-import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 type ProjectCardProps = {
   imgSrc: string;
-  projectType: string;
   projectName: string;
   projectLinkLive: string;
   projectLinkGh: string;
@@ -16,7 +14,6 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({
   imgSrc,
-  projectType,
   projectName,
   projectLinkLive,
   projectLinkGh,
