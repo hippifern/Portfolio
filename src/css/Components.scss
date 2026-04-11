@@ -466,3 +466,115 @@ $gradientInvert: linear-gradient(
     width: 200px;
   }
 }
+
+//
+// MOBILE STYLES
+//
+
+@media only screen and (max-width: 800px) {
+  .nav-container {
+    justify-content: center;
+    position: fixed;
+    top: 100%;
+    transform: translateY(-150%);
+    background-color: $blackcolor;
+    border-radius: 10px;
+    width: 95%;
+    z-index: 3;
+    .navbar {
+      width: 100%;
+      a {
+        color: $whitecolor;
+      }
+    }
+  }
+  .hero {
+    flex-direction: column;
+    .hero-left {
+      h1 {
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .links {
+        justify-content: center;
+      }
+    }
+    .hero-right {
+      .shadow {
+        transform: translate(47%, -130%);
+      }
+    }
+  }
+  .work-container {
+    .project-cards-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      padding-bottom: 20%;
+      .project-card {
+        height: 225px;
+        .overlay {
+          .notch {
+            width: 20%;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-container {
+    .content-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 2fr 1fr 2fr;
+      padding-bottom: 20%;
+      gap: 1%;
+      .text-block-large {
+        width: 100%;
+        p {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  .contact-container {
+    .contact-left {
+      display: none;
+    }
+    .lets-work {
+      height: auto;
+      padding-bottom: 40%;
+      .content {
+        align-items: center;
+        h4 {
+          font-size: 3rem;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      .socials {
+        width: 100%;
+        justify-content: center;
+      }
+      .cv {
+        width: 100%;
+        justify-content: center;
+      }
+      .go-back {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -4,8 +4,11 @@ import { IconButton } from "./IconButton";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import bluesky from "../assets/bluesky.png";
+import { useScreenSize } from "../hooks/useScreenSize.tsx";
 
 export const Hero = () => {
+  const screenSize = useScreenSize();
+  console.log(screenSize);
   return (
     <div className="hero">
       <div className="hero-left">
@@ -39,7 +42,14 @@ export const Hero = () => {
         </div>
       </div>
       <div className="hero-right">
-        <video width="500" height="500" autoPlay loop muted playsInline>
+        <video
+          width={screenSize === "xs" ? "375" : 500}
+          height={screenSize === "xs" ? "375" : 500}
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           <source src={video} type="video/mp4" />
         </video>
         <div className="shadow"></div>

@@ -427,4 +427,97 @@
   100% {
     width: 200px;
   }
+}
+@media only screen and (max-width: 800px) {
+  .nav-container {
+    justify-content: center;
+    position: fixed;
+    top: 100%;
+    transform: translateY(-150%);
+    background-color: #292929;
+    border-radius: 10px;
+    width: 95%;
+    z-index: 3;
+  }
+  .nav-container .navbar {
+    width: 100%;
+  }
+  .nav-container .navbar a {
+    color: #fcfcfc;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero .hero-left h1 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .hero .hero-left h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero .hero-left h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero .hero-left .links {
+    justify-content: center;
+  }
+  .hero .hero-right .shadow {
+    transform: translate(47%, -130%);
+  }
+  .work-container .project-cards-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-bottom: 20%;
+  }
+  .work-container .project-cards-container .project-card {
+    height: 225px;
+  }
+  .work-container .project-cards-container .project-card .overlay .notch {
+    width: 20%;
+    height: 20px;
+  }
+  .about-container .content-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr 2fr;
+    padding-bottom: 20%;
+    gap: 1%;
+  }
+  .about-container .content-grid .text-block-large {
+    width: 100%;
+  }
+  .about-container .content-grid .text-block-large p {
+    font-size: 3rem;
+  }
+  .contact-container .contact-left {
+    display: none;
+  }
+  .contact-container .lets-work {
+    height: auto;
+    padding-bottom: 40%;
+  }
+  .contact-container .lets-work .content {
+    align-items: center;
+  }
+  .contact-container .lets-work .content h4 {
+    font-size: 3rem;
+  }
+  .contact-container .lets-work .content p {
+    text-align: center;
+  }
+  .contact-container .lets-work .socials {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-container .lets-work .cv {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-container .lets-work .go-back {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }/*# sourceMappingURL=Components.css.map */

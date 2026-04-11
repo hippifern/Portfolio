@@ -10,8 +10,11 @@ import vue from "../assets/vuejs.png";
 import nodejs from "../assets/nodejs.png";
 import nextjs from "../assets/nextjs.png";
 import analytics from "../assets/analytics.png";
+import { useScreenSize } from "../hooks/useScreenSize.tsx";
 
 export const About = () => {
+  const screenSize = useScreenSize();
+
   return (
     <div id="about" className="about-container">
       <h3>About Me.</h3>
@@ -55,61 +58,61 @@ export const About = () => {
               source={react}
               linkable={false}
               link="https://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={js}
               linkable={false}
               link="ttps://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={css}
               linkable={false}
               link="ttps://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={vue}
               linkable={false}
               link="https://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={shopify}
               linkable={false}
               link="ttps://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={gh}
               linkable={false}
               link="ttps://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={chatgpt}
               linkable={false}
               link="https://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={nodejs}
               linkable={false}
               link="ttps://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={nextjs}
               linkable={false}
               link="ttps://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
             <IconButton
               source={analytics}
               linkable={false}
               link="https://github.com"
-              large={true}
+              large={screenSize === "xs" ? false : true}
             />
           </div>
         </div>

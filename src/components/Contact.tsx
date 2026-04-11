@@ -42,7 +42,9 @@ export const Contact = () => {
           />
         </div>
         <div className="cv">
-          <Button text="Download CV" />
+          <a href="/kie-croft-cv.pdf" download>
+            <Button text="Download CV" />
+          </a>
         </div>
         <div className="go-back">
           <IconButton source={top} linkable={true} link="#home" large={false} />
