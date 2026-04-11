@@ -16,7 +16,7 @@ export const IconButton = ({
   return (
     <>
       {linkable ? (
-        <a className="linkable-icon-button" href={link}>
+        <a target="_blank" className="linkable-icon-button" href={link}>
           <div
             className={!large ? "icon-button" : "icon-button icon-button-large"}
           >

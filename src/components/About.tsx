@@ -29,9 +29,12 @@ export const About = () => {
         <div className="text-block">
           <p>
             At{" "}
-            <span className="inline-link">
-              <span className="highlight-link">Sandfold Studio,</span>
-            </span>{" "}
+            <a target="_blank" href="https://www.sandfoldstudio.com">
+              {" "}
+              <span className="inline-link">
+                <span className="highlight-link">Sandfold Studio,</span>
+              </span>
+            </a>{" "}
             I design and develop scalable front-end systems, craft
             high-performing e-commerce builds, and bring ideas to life through
             smooth animations and thoughtful UI. I work closely with clients to
@@ -40,9 +43,11 @@ export const About = () => {
           </p>
           <p>
             At{" "}
-            <span className="inline-link">
-              <span className="highlight-link">Twinkl</span>
-            </span>{" "}
+            <a target="_blank" href="https://www.twinkl.co.uk">
+              <span className="inline-link">
+                <span className="highlight-link">Twinkl</span>
+              </span>{" "}
+            </a>
             and in contract roles, I created landing pages and campaigns that
             actually moved the needle. From improving Core Web Vitals to
             doubling conversion rates and reducing drop-off, I focused on the
