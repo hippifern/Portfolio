@@ -24,18 +24,18 @@ export const Work = () => {
           }
         />
         <ProjectCard
-          imgSrc={imgThree}
-          projectName={"The Jump Digital"}
-          projectLinkLive={""}
-          projectLinkGh={""}
-        />
-        <ProjectCard
           imgSrc={imgFour}
           projectName={"Sandfold Studio"}
           projectLinkLive={"https://sandfoldstudio.com"}
           projectLinkGh={
             "https://github.com/hippifern/brand-website-redevelopment"
           }
+        />
+        <ProjectCard
+          imgSrc={imgThree}
+          projectName={"The Jump Digital"}
+          projectLinkLive={"https://jumpdigital.framer.website/"}
+          projectLinkGh={""}
         />
       </div>
     </div>
