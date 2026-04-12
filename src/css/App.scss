@@ -53,6 +53,8 @@ li {
   }
 }
 
-.app-container-dark {
-  background-color: $blackcolor;
+@media only screen and (max-width: 800px) {
+  .app-container {
+    padding: 5%;
+  }
 }

@@ -40,6 +40,8 @@ li {
   max-width: 1300px;
 }
 
-.app-container-dark {
-  background-color: #292929;
+@media only screen and (max-width: 800px) {
+  .app-container {
+    padding: 5%;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -43,8 +43,8 @@ export const Hero = () => {
       </div>
       <div className="hero-right">
         <video
-          width={screenSize === "xs" ? "375" : 500}
-          height={screenSize === "xs" ? "375" : 500}
+          width={screenSize === "xs" ? "350" : "500"}
+          height={screenSize === "xs" ? "375" : "500"}
           autoPlay
           loop
           muted

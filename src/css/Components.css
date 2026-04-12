@@ -66,7 +66,7 @@
 .hero .hero-left h1 {
   font-size: 6rem;
   color: #292929;
-  width: 73%;
+  width: 77%;
   border-radius: 10px;
   background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
   padding-left: 1%;
@@ -98,7 +98,7 @@
   width: 200px;
   top: 100%;
   left: 0%;
-  transform: translate(85%, -130%);
+  transform: translate(85%, -150%);
   opacity: 0.3;
   animation-name: shadow-width;
   animation-duration: 4.5s;
@@ -432,11 +432,10 @@
   .nav-container {
     justify-content: center;
     position: fixed;
-    top: 100%;
-    transform: translateY(-150%);
+    top: 85%;
     background-color: #292929;
     border-radius: 10px;
-    width: 95%;
+    width: 80%;
     z-index: 3;
   }
   .nav-container .navbar {
@@ -490,6 +489,16 @@
   }
   .about-container .content-grid .text-block-large p {
     font-size: 3rem;
+    text-align: left;
+  }
+  .about-container .content-grid .text-block .links {
+    width: 90%;
+  }
+  .about-container .content-grid .text-block p {
+    font-size: 0.9rem;
+  }
+  .contact-container {
+    padding-top: 0;
   }
   .contact-container .contact-left {
     display: none;
@@ -497,6 +506,7 @@
   .contact-container .lets-work {
     height: auto;
     padding-bottom: 40%;
+    gap: 15px;
   }
   .contact-container .lets-work .content {
     align-items: center;
