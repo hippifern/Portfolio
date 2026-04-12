@@ -1,8 +1,8 @@
 import { ProjectCard } from "./ProjectCard";
 import imgOne from "../assets/one.png";
 import imgTwo from "../assets/two.png";
-import imgThree from "../assets/three.png";
 import imgFour from "../assets/four.png";
+import thejump from "../assets/thejump.png";
 
 export const Work = () => {
   return (
@@ -32,7 +32,7 @@ export const Work = () => {
           }
         />
         <ProjectCard
-          imgSrc={imgThree}
+          imgSrc={thejump}
           projectName={"The Jump Digital"}
           projectLinkLive={"https://jumpdigital.framer.website/"}
           projectLinkGh={""}
