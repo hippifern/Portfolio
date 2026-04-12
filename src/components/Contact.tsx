@@ -20,6 +20,7 @@ export const Contact = () => {
         <div className="content">
           <h4>Let's Work.</h4>
           <p>Together we can code something that makes people smile.</p>
+          <p className="email">kiecroft@gmail.com</p>
         </div>
         <div className="socials">
           <IconButton
