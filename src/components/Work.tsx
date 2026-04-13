@@ -3,6 +3,7 @@ import imgOne from "../assets/one.png";
 import imgTwo from "../assets/two.png";
 import imgFour from "../assets/four.png";
 import thejump from "../assets/thejump.png";
+import codeByte from "../assets/CodeBytes.png";
 
 export const Work = () => {
   return (
@@ -14,6 +15,12 @@ export const Work = () => {
           projectName={"DungeonAI.exe"}
           projectLinkLive={"https://hippifern.github.io/AI-Adventure-Game/"}
           projectLinkGh={"https://github.com/hippifern/AI-Adventure-Game"}
+        />
+        <ProjectCard
+          imgSrc={codeByte}
+          projectName={"CodeBytes"}
+          projectLinkLive={"https://github.com/hippifern/CodeSnippetManager"}
+          projectLinkGh={"https://github.com/hippifern/CodeSnippetManager"}
         />
         <ProjectCard
           imgSrc={imgTwo}
