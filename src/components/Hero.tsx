@@ -8,7 +8,6 @@ import { useScreenSize } from "../hooks/useScreenSize.tsx";
 
 export const Hero = () => {
   const screenSize = useScreenSize();
-  console.log(screenSize);
   return (
     <div className="hero">
       <div className="hero-left">

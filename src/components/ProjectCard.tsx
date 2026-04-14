@@ -1,15 +1,16 @@
-import { gsap } from "gsap/gsap-core";
+import { gsap } from "gsap";
 import "../css/Components.css";
 import light from "../assets/light.png";
 import github from "../assets/github.png";
 import { IconButton } from "./IconButton";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 type ProjectCardProps = {
   imgSrc: string;
   projectName: string;
   projectLinkLive: string;
   projectLinkGh: string;
+  projectType: string;
 };
 
 export const ProjectCard = ({
@@ -17,20 +18,28 @@ export const ProjectCard = ({
   projectName,
   projectLinkLive,
   projectLinkGh,
+  projectType,
 }: ProjectCardProps) => {
   const nameRef = useRef(null);
 
+  useEffect(() => {
+    gsap.set(nameRef.current, { opacity: 0, y: -10 });
+  }, []);
+
   const onMouseEnter = () => {
+    if (!nameRef.current) return;
     gsap.to(nameRef.current, {
       opacity: 1,
-      translateY: "0px",
+      y: 0,
       duration: 0.2,
     });
   };
+
   const onMouseLeave = () => {
+    if (!nameRef.current) return;
     gsap.to(nameRef.current, {
       opacity: 0,
-      translateY: "-10px",
+      y: -10,
       duration: 0.2,
     });
   };
@@ -48,6 +57,7 @@ export const ProjectCard = ({
         </div>
         <div ref={nameRef} className="project-card-name">
           <h4>{projectName}</h4>
+          <p>{projectType}</p>
         </div>
         <div className="icon-bar">
           <IconButton

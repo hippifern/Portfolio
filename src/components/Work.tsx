@@ -15,12 +15,14 @@ export const Work = () => {
           projectName={"DungeonAI.exe"}
           projectLinkLive={"https://hippifern.github.io/AI-Adventure-Game/"}
           projectLinkGh={"https://github.com/hippifern/AI-Adventure-Game"}
+          projectType={"Personal Project"}
         />
         <ProjectCard
           imgSrc={codeByte}
-          projectName={"CodeBytes"}
+          projectName={"Code Bytes"}
           projectLinkLive={"https://github.com/hippifern/CodeSnippetManager"}
           projectLinkGh={"https://github.com/hippifern/CodeSnippetManager"}
+          projectType={"Personal Project"}
         />
         <ProjectCard
           imgSrc={imgTwo}
@@ -29,6 +31,7 @@ export const Work = () => {
           projectLinkGh={
             "https://github.com/hippifern/shopify-ecommerce-development"
           }
+          projectType={"Agency Work"}
         />
         <ProjectCard
           imgSrc={imgFour}
@@ -37,12 +40,14 @@ export const Work = () => {
           projectLinkGh={
             "https://github.com/hippifern/brand-website-redevelopment"
           }
+          projectType={"Agency Work"}
         />
         <ProjectCard
           imgSrc={thejump}
           projectName={"The Jump Digital"}
           projectLinkLive={"https://jumpdigital.framer.website/"}
           projectLinkGh={""}
+          projectType={"Agency Work"}
         />
       </div>
     </div>

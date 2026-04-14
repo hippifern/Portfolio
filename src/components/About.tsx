@@ -48,12 +48,11 @@ export const About = () => {
                 <span className="highlight-link">Twinkl</span>
               </span>{" "}
             </a>
-            and in contract roles, I created landing pages and campaigns that
-            actually moved the needle. From improving Core Web Vitals to
-            doubling conversion rates and reducing drop-off, I focused on the
-            details that make a real impact. Whether it’s refining user
-            journeys, optimising performance, or tweaking layouts, I’m all about
-            building websites that feel as good as they function.
+            and in contract roles, I created landing pages and handled Technical
+            SEO that actually moved the needle. Improving Core Web Vitals,
+            doubling conversion rates and reducing drop-off. Aside my contract
+            work, I volunteered as a tutor/mentor for an online coding bootcamp,
+            providing reviews and support for students.
           </p>
         </div>
         <div className="text-block">
