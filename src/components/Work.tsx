@@ -4,6 +4,10 @@ import imgTwo from "../assets/two.png";
 import imgFour from "../assets/four.png";
 import thejump from "../assets/thejump.png";
 import codeByte from "../assets/CodeBytes.png";
+import lbtype from "../assets/lbtype.png";
+import roasters from "../assets/roasters.png";
+import twinkl from "../assets/twinkl.png";
+import npm from "../assets/npm.png";
 
 export const Work = () => {
   return (
@@ -48,6 +52,34 @@ export const Work = () => {
           projectLinkLive={"https://jumpdigital.framer.website/"}
           projectLinkGh={""}
           projectType={"Agency Work"}
+        />
+        <ProjectCard
+          imgSrc={twinkl}
+          projectName={"Twinkl Edu."}
+          projectLinkLive={"https://twinkl.co.uk"}
+          projectLinkGh={""}
+          projectType={"In-house Work"}
+        />
+        <ProjectCard
+          imgSrc={roasters}
+          projectName={"Redem. Roasters"}
+          projectLinkLive={"https://redemptionroasters.com/"}
+          projectLinkGh={""}
+          projectType={"Subcontractor"}
+        />
+        <ProjectCard
+          imgSrc={lbtype}
+          projectName={"LB Type"}
+          projectLinkLive={"https://lbtype.com"}
+          projectLinkGh={""}
+          projectType={"Subcontractor"}
+        />
+        <ProjectCard
+          imgSrc={npm}
+          projectName={"NPM Package"}
+          projectLinkLive={"https://www.npmjs.com/package/craft-react-app"}
+          projectLinkGh={""}
+          projectType={"Personal Project"}
         />
       </div>
     </div>

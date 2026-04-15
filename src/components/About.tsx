@@ -51,8 +51,8 @@ export const About = () => {
             and in contract roles, I created landing pages and handled Technical
             SEO that actually moved the needle. Improving Core Web Vitals,
             doubling conversion rates and reducing drop-off. Aside my contract
-            work, I volunteered as a tutor/mentor for an online coding bootcamp,
-            providing reviews and support for students.
+            work, I acted as a tutor/mentor for an online coding bootcamp,
+            providing code reviews, support & marking for students.
           </p>
         </div>
         <div className="text-block">
