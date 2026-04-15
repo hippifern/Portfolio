@@ -11,6 +11,7 @@ type ProjectCardProps = {
   projectLinkLive: string;
   projectLinkGh: string;
   projectType: string;
+  projectTech: string[];
 };
 
 export const ProjectCard = ({
@@ -19,6 +20,7 @@ export const ProjectCard = ({
   projectLinkLive,
   projectLinkGh,
   projectType,
+  projectTech,
 }: ProjectCardProps) => {
   const nameRef = useRef(null);
 
@@ -60,18 +62,25 @@ export const ProjectCard = ({
           <p>{projectType}</p>
         </div>
         <div className="icon-bar">
-          <IconButton
-            source={light}
-            linkable={true}
-            link={projectLinkLive}
-            large={false}
-          />
-          <IconButton
-            source={github}
-            linkable={true}
-            link={projectLinkGh}
-            large={false}
-          />
+          <div className="tech-icons">
+            {projectTech.map((tech) => {
+              return <img src={tech} alt="" />;
+            })}
+          </div>
+          <div className="icons">
+            <IconButton
+              source={light}
+              linkable={true}
+              link={projectLinkLive}
+              large={false}
+            />
+            <IconButton
+              source={github}
+              linkable={true}
+              link={projectLinkGh}
+              large={false}
+            />
+          </div>
         </div>
       </div>
     </div>

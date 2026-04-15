@@ -9,6 +9,13 @@ import roasters from "../assets/roasters.png";
 import twinkl from "../assets/twinkl.png";
 import npm from "../assets/npm.png";
 
+import css from "../assets/css.png";
+import js from "../assets/javascript.png";
+import react from "../assets/react.png";
+import shopify from "../assets/shopify.png";
+import framer from "../assets/framer.png";
+import firebase from "../assets/firebase.png";
+
 export const Work = () => {
   return (
     <div className="work-container" id="work">
@@ -20,6 +27,7 @@ export const Work = () => {
           projectLinkLive={"https://hippifern.github.io/AI-Adventure-Game/"}
           projectLinkGh={"https://github.com/hippifern/AI-Adventure-Game"}
           projectType={"Personal Project"}
+          projectTech={[react, js, css]}
         />
         <ProjectCard
           imgSrc={codeByte}
@@ -27,6 +35,7 @@ export const Work = () => {
           projectLinkLive={"https://github.com/hippifern/CodeSnippetManager"}
           projectLinkGh={"https://github.com/hippifern/CodeSnippetManager"}
           projectType={"Personal Project"}
+          projectTech={[react, js, css, firebase]}
         />
         <ProjectCard
           imgSrc={imgTwo}
@@ -36,6 +45,7 @@ export const Work = () => {
             "https://github.com/hippifern/shopify-ecommerce-development"
           }
           projectType={"Agency Work"}
+          projectTech={[shopify, css]}
         />
         <ProjectCard
           imgSrc={imgFour}
@@ -45,6 +55,7 @@ export const Work = () => {
             "https://github.com/hippifern/brand-website-redevelopment"
           }
           projectType={"Agency Work"}
+          projectTech={[framer, react, js]}
         />
         <ProjectCard
           imgSrc={thejump}
@@ -52,6 +63,7 @@ export const Work = () => {
           projectLinkLive={"https://jumpdigital.framer.website/"}
           projectLinkGh={""}
           projectType={"Agency Work"}
+          projectTech={[framer, react, js]}
         />
         <ProjectCard
           imgSrc={twinkl}
@@ -59,6 +71,7 @@ export const Work = () => {
           projectLinkLive={"https://twinkl.co.uk"}
           projectLinkGh={""}
           projectType={"In-house Work"}
+          projectTech={[css]}
         />
         <ProjectCard
           imgSrc={roasters}
@@ -66,6 +79,7 @@ export const Work = () => {
           projectLinkLive={"https://redemptionroasters.com/"}
           projectLinkGh={""}
           projectType={"Subcontractor"}
+          projectTech={[js, css]}
         />
         <ProjectCard
           imgSrc={lbtype}
@@ -73,6 +87,7 @@ export const Work = () => {
           projectLinkLive={"https://lbtype.com"}
           projectLinkGh={""}
           projectType={"Subcontractor"}
+          projectTech={[js, css, shopify]}
         />
         <ProjectCard
           imgSrc={npm}
@@ -80,6 +95,7 @@ export const Work = () => {
           projectLinkLive={"https://www.npmjs.com/package/craft-react-app"}
           projectLinkGh={""}
           projectType={"Personal Project"}
+          projectTech={[js]}
         />
       </div>
     </div>

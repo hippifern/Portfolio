@@ -170,15 +170,32 @@
   border-radius: 100%;
 }
 .project-card .overlay .icon-bar {
-  height: 45px;
-  width: 50%;
+  height: 40px;
+  width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  gap: 10%;
   background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
-  border-radius: 10px;
+  border-radius: 5px;
+  gap: 5%;
+}
+.project-card .overlay .icon-bar .tech-icons {
+  flex: 2;
+  border-right: 1px solid #292929;
+  display: flex;
+  gap: 10%;
+  padding-left: 10px;
+}
+.project-card .overlay .icon-bar .tech-icons img {
+  height: 25px;
+  width: 25px;
+  border-radius: 0;
+}
+.project-card .overlay .icon-bar .icons {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
 }
 
 .project-card-name {
