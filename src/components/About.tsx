@@ -22,7 +22,7 @@ export const About = () => {
       <div className="content-grid">
         <div className="text-block-large">
           <p>
-            Mixing clean code with good vibes and great design for the last 5
+            Mixing clean code with good vibes and great design for the last 3
             years.
           </p>
         </div>
