@@ -35,11 +35,12 @@ export const About = () => {
                 <span className="highlight-link">Sandfold Studio,</span>
               </span>
             </a>{" "}
-            I design and develop scalable front-end systems, craft
+            I design and develop scalable web applications, craft
             high-performing e-commerce builds, and bring ideas to life through
-            smooth animations and thoughtful UI. I work closely with clients to
-            turn briefs into polished, production-ready experiences that don’t
-            just look good—they perform.
+            smooth, professional UI and performant, scalable and safe back end
+            services. I work closely with clients to turn briefs into polished,
+            production-ready experiences that don’t just look good — they
+            perform.
           </p>
           <p>
             At{" "}
@@ -48,11 +49,11 @@ export const About = () => {
                 <span className="highlight-link">Twinkl</span>
               </span>{" "}
             </a>
-            and in contract roles, I created landing pages and handled Technical
-            SEO that actually moved the needle. Improving Core Web Vitals,
-            doubling conversion rates and reducing drop-off. Aside my contract
-            work, I acted as a tutor/mentor for an online coding bootcamp,
-            providing code reviews, support & marking for students.
+            I created landing pages and handled Technical SEO that actually
+            moved the needle. Improving Core Web Vitals, doubling conversion
+            rates and reducing drop-off. Outside of my contract work, I acted as
+            a tutor/mentor for an online coding bootcamp, providing code
+            reviews, support & marking for students.
           </p>
         </div>
         <div className="text-block">
