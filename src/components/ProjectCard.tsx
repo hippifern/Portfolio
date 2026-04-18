@@ -74,12 +74,16 @@ export const ProjectCard = ({
               link={projectLinkLive}
               large={false}
             />
-            <IconButton
-              source={github}
-              linkable={true}
-              link={projectLinkGh}
-              large={false}
-            />
+            {projectLinkGh !== "" ? (
+              <IconButton
+                source={github}
+                linkable={true}
+                link={projectLinkGh}
+                large={false}
+              />
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>

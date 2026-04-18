@@ -195,7 +195,9 @@
 .project-card .overlay .icon-bar .icons {
   flex: 1;
   display: flex;
-  justify-content: space-around;
+  padding-right: 4px;
+  justify-content: end;
+  gap: 6px;
 }
 
 .project-card-name {

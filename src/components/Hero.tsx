@@ -3,7 +3,6 @@ import video from "../assets/me.mp4";
 import { IconButton } from "./IconButton";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
-import bluesky from "../assets/bluesky.png";
 import { useScreenSize } from "../hooks/useScreenSize.tsx";
 
 export const Hero = () => {
@@ -30,12 +29,6 @@ export const Hero = () => {
             source={linkedin}
             linkable={true}
             link="https://www.linkedin.com/in/kie-croft/"
-            large={false}
-          />
-          <IconButton
-            source={bluesky}
-            linkable={true}
-            link="https://bsky.app/"
             large={false}
           />
         </div>
