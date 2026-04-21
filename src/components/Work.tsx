@@ -6,15 +6,16 @@ import thejump from "../assets/thejump.png";
 import codeByte from "../assets/CodeBytes.png";
 import lbtype from "../assets/lbtype.png";
 import roasters from "../assets/roasters.png";
-import twinkl from "../assets/twinkl.png";
-import npm from "../assets/npm.png";
-
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
 import react from "../assets/react.png";
 import shopify from "../assets/shopify.png";
 import framer from "../assets/framer.png";
 import firebase from "../assets/firebase.png";
+import python from "../assets/python.png";
+import nodejs from "../assets/nodejs.png";
+import db from "../assets/database.png";
+import typescript from "../assets/typescript.png";
 
 export const Work = () => {
   return (
@@ -30,12 +31,20 @@ export const Work = () => {
           projectTech={[react, js, css]}
         />
         <ProjectCard
-          imgSrc={codeByte}
-          projectName={"Code Bytes"}
-          projectLinkLive={"https://github.com/hippifern/CodeSnippetManager"}
-          projectLinkGh={"https://github.com/hippifern/CodeSnippetManager"}
+          imgSrc={imgOne}
+          projectName={"NodeJS Backend"}
+          projectLinkLive={""}
+          projectLinkGh={"https://github.com/hippifern/dungeonAI-Backend"}
           projectType={"Personal Project"}
-          projectTech={[react, js, css, firebase]}
+          projectTech={[typescript, nodejs, db]}
+        />
+        <ProjectCard
+          imgSrc={imgOne}
+          projectName={"Analytics API"}
+          projectLinkLive={"https://www.npmjs.com/package/craft-react-app"}
+          projectLinkGh={""}
+          projectType={"Personal Project"}
+          projectTech={[js, python, db]}
         />
         <ProjectCard
           imgSrc={imgTwo}
@@ -58,20 +67,20 @@ export const Work = () => {
           projectTech={[framer, react, js]}
         />
         <ProjectCard
+          imgSrc={codeByte}
+          projectName={"Code Bytes"}
+          projectLinkLive={"https://code-bytes-five.vercel.app/"}
+          projectLinkGh={"https://github.com/hippifern/CodeSnippetManager"}
+          projectType={"Personal Project"}
+          projectTech={[react, typescript, css, firebase]}
+        />
+        <ProjectCard
           imgSrc={thejump}
           projectName={"The Jump Digital"}
           projectLinkLive={"https://jumpdigital.framer.website/"}
           projectLinkGh={""}
           projectType={"Agency Work"}
           projectTech={[framer, react, js]}
-        />
-        <ProjectCard
-          imgSrc={twinkl}
-          projectName={"Twinkl Edu."}
-          projectLinkLive={"https://twinkl.co.uk"}
-          projectLinkGh={""}
-          projectType={"In-house Work"}
-          projectTech={[css]}
         />
         <ProjectCard
           imgSrc={roasters}
@@ -88,14 +97,6 @@ export const Work = () => {
           projectLinkGh={""}
           projectType={"Subcontractor"}
           projectTech={[js, css, shopify]}
-        />
-        <ProjectCard
-          imgSrc={npm}
-          projectName={"NPM Package"}
-          projectLinkLive={"https://www.npmjs.com/package/craft-react-app"}
-          projectLinkGh={""}
-          projectType={"Personal Project"}
-          projectTech={[js]}
         />
       </div>
     </div>

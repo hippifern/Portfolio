@@ -1,15 +1,15 @@
 import "../css/Components.css";
 import { IconButton } from "./IconButton";
-import chatgpt from "../assets/chatgpt.png";
 import css from "../assets/css.png";
 import gh from "../assets/github (1).png";
 import js from "../assets/javascript.png";
 import react from "../assets/react.png";
-import shopify from "../assets/shopify.png";
-import vue from "../assets/vuejs.png";
 import nodejs from "../assets/nodejs.png";
 import nextjs from "../assets/nextjs.png";
-import analytics from "../assets/analytics.png";
+import firebase from "../assets/firebase.png";
+import python from "../assets/python.png";
+import db from "../assets/database.png";
+import typescript from "../assets/typescript.png";
 import { useScreenSize } from "../hooks/useScreenSize.tsx";
 
 export const About = () => {
@@ -78,25 +78,7 @@ export const About = () => {
               large={screenSize === "xs" ? false : true}
             />
             <IconButton
-              source={vue}
-              linkable={false}
-              link="https://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={shopify}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={gh}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={chatgpt}
+              source={python}
               linkable={false}
               link="https://github.com"
               large={screenSize === "xs" ? false : true}
@@ -108,13 +90,31 @@ export const About = () => {
               large={screenSize === "xs" ? false : true}
             />
             <IconButton
+              source={gh}
+              linkable={false}
+              link="ttps://github.com"
+              large={screenSize === "xs" ? false : true}
+            />
+            <IconButton
+              source={typescript}
+              linkable={false}
+              link="https://github.com"
+              large={screenSize === "xs" ? false : true}
+            />
+            <IconButton
+              source={firebase}
+              linkable={false}
+              link="ttps://github.com"
+              large={screenSize === "xs" ? false : true}
+            />
+            <IconButton
               source={nextjs}
               linkable={false}
               link="ttps://github.com"
               large={screenSize === "xs" ? false : true}
             />
             <IconButton
-              source={analytics}
+              source={db}
               linkable={false}
               link="https://github.com"
               large={screenSize === "xs" ? false : true}
@@ -124,7 +124,7 @@ export const About = () => {
         <div className="text-block">
           <h4>Certifications</h4>
           <p>
-            BA Digital Media & Communication -{" "}
+            BSc Digital Media & Communication -{" "}
             <span className="bold">Edge Hill University</span>
           </p>
           <p>

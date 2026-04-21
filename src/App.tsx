@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero";
 import { Work } from "./components/Work";
 import { Contact } from "./components/Contact";
 import { About } from "./components/About";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Contact />
       </div>
+      <Analytics />
     </div>
   );
 }
