@@ -35,10 +35,10 @@ export const About = () => {
                 <span className="highlight-link">Sandfold Studio,</span>
               </span>
             </a>{" "}
-            I design and develop scalable web applications, craft
-            high-performing e-commerce builds, and bring ideas to life through
-            smooth, professional UI and performant, scalable and safe back end
-            services. I work closely with clients to turn briefs into polished,
+            I design & develop scalable web applications, craft high-performing
+            e-commerce builds, and bring ideas to life through smooth,
+            professional UI and performant, scalable and safe back end services.
+            I work closely with clients to turn briefs into polished,
             production-ready experiences that don’t just look good — they
             perform.
           </p>
