@@ -15,8 +15,12 @@ export const Hero = () => {
                     Hello 👋🏼
                 </motion.h3>
                 <motion.h1
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
+                    initial={{
+                        scale: 0,
+                    }}
+                    animate={{
+                        scale: 1,
+                    }}
                     transition={{ delay: 0.2 }}
                 >
                     <span className="highlight">I'm</span>

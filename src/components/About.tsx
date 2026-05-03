@@ -1,146 +1,142 @@
 import "../css/Components.css";
-import { IconButton } from "./IconButton";
-import css from "../assets/css.png";
-import gh from "../assets/github (1).png";
-import js from "../assets/javascript.png";
-import react from "../assets/react.png";
-import nodejs from "../assets/nodejs.png";
-import nextjs from "../assets/nextjs.png";
-import firebase from "../assets/firebase.png";
-import python from "../assets/python.png";
-import db from "../assets/database.png";
-import typescript from "../assets/typescript.png";
-import { useScreenSize } from "../hooks/useScreenSize.tsx";
+import PhysicsSimulation from "./PhysicsScene.jsx";
 
 export const About = () => {
-  const screenSize = useScreenSize();
+    return (
+        <div id="about" className="about-container">
+            <h3>About Me.</h3>
 
-  return (
-    <div id="about" className="about-container">
-      <h3>About Me.</h3>
-
-      <div className="content-grid">
-        <div className="text-block-large">
-          <p>
-            Mixing clean code with good vibes and great design for the last 3
-            years.
-          </p>
+            <div className="content-grid">
+                <div className="text-block-large">
+                    <p>
+                        Mixing clean code with good vibes and great design for
+                        the last 3 years.
+                    </p>
+                </div>
+                <div className="text-block">
+                    <p>
+                        At{" "}
+                        <a
+                            target="_blank"
+                            href="https://www.sandfoldstudio.com"
+                        >
+                            {" "}
+                            <span className="inline-link">
+                                <span className="highlight-link">
+                                    Sandfold Studio,
+                                </span>
+                            </span>
+                        </a>{" "}
+                        I design & develop scalable web applications, craft
+                        high-performing e-commerce builds, and bring ideas to
+                        life through smooth, professional UI and performant,
+                        scalable and safe back end services. I work closely with
+                        clients to turn briefs into polished, production-ready
+                        experiences that don’t just look good — they perform.
+                    </p>
+                    <p>
+                        At{" "}
+                        <a target="_blank" href="https://www.twinkl.co.uk">
+                            <span className="inline-link">
+                                <span className="highlight-link">Twinkl</span>
+                            </span>{" "}
+                        </a>
+                        I created landing pages and handled Technical SEO that
+                        actually moved the needle. Improving Core Web Vitals,
+                        doubling conversion rates and reducing drop-off. Outside
+                        of my contract work, I acted as a tutor/mentor for an
+                        online coding bootcamp, providing code reviews, support
+                        & marking for students.
+                    </p>
+                </div>
+                <div className="text-block">
+                    <h4>My Tech Stack</h4>
+                    <div className="links">
+                        <PhysicsSimulation />
+                    </div>
+                    {/* <div className="links">
+                        <IconButton
+                            source={react}
+                            linkable={false}
+                            link="https://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={js}
+                            linkable={false}
+                            link="ttps://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={css}
+                            linkable={false}
+                            link="ttps://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={python}
+                            linkable={false}
+                            link="https://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={nodejs}
+                            linkable={false}
+                            link="ttps://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={gh}
+                            linkable={false}
+                            link="ttps://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={typescript}
+                            linkable={false}
+                            link="https://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={firebase}
+                            linkable={false}
+                            link="ttps://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={nextjs}
+                            linkable={false}
+                            link="ttps://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                        <IconButton
+                            source={db}
+                            linkable={false}
+                            link="https://github.com"
+                            large={screenSize === "xs" ? false : true}
+                        />
+                    </div> */}
+                </div>
+                <div className="text-block">
+                    <h4>Certifications</h4>
+                    <p>
+                        BSc Digital Media & Communication -{" "}
+                        <span className="bold">Edge Hill University</span>
+                    </p>
+                    <p>
+                        Post Graduate Degree In Education -{" "}
+                        <span className="bold">University of Cumbria</span>
+                    </p>
+                    <p>
+                        Front End Development Nanodegree -{" "}
+                        <span className="bold">Udacity</span>
+                    </p>
+                    <p>
+                        UX Design Professional Certification -{" "}
+                        <span className="bold">Google</span>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div className="text-block">
-          <p>
-            At{" "}
-            <a target="_blank" href="https://www.sandfoldstudio.com">
-              {" "}
-              <span className="inline-link">
-                <span className="highlight-link">Sandfold Studio,</span>
-              </span>
-            </a>{" "}
-            I design & develop scalable web applications, craft high-performing
-            e-commerce builds, and bring ideas to life through smooth,
-            professional UI and performant, scalable and safe back end services.
-            I work closely with clients to turn briefs into polished,
-            production-ready experiences that don’t just look good — they
-            perform.
-          </p>
-          <p>
-            At{" "}
-            <a target="_blank" href="https://www.twinkl.co.uk">
-              <span className="inline-link">
-                <span className="highlight-link">Twinkl</span>
-              </span>{" "}
-            </a>
-            I created landing pages and handled Technical SEO that actually
-            moved the needle. Improving Core Web Vitals, doubling conversion
-            rates and reducing drop-off. Outside of my contract work, I acted as
-            a tutor/mentor for an online coding bootcamp, providing code
-            reviews, support & marking for students.
-          </p>
-        </div>
-        <div className="text-block">
-          <h4>My Tech Stack</h4>
-          <div className="links">
-            <IconButton
-              source={react}
-              linkable={false}
-              link="https://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={js}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={css}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={python}
-              linkable={false}
-              link="https://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={nodejs}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={gh}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={typescript}
-              linkable={false}
-              link="https://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={firebase}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={nextjs}
-              linkable={false}
-              link="ttps://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-            <IconButton
-              source={db}
-              linkable={false}
-              link="https://github.com"
-              large={screenSize === "xs" ? false : true}
-            />
-          </div>
-        </div>
-        <div className="text-block">
-          <h4>Certifications</h4>
-          <p>
-            BSc Digital Media & Communication -{" "}
-            <span className="bold">Edge Hill University</span>
-          </p>
-          <p>
-            Post Graduate Degree In Education -{" "}
-            <span className="bold">University of Cumbria</span>
-          </p>
-          <p>
-            Front End Development Nanodegree -{" "}
-            <span className="bold">Udacity</span>
-          </p>
-          <p>
-            UX Design Professional Certification -{" "}
-            <span className="bold">Google</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };

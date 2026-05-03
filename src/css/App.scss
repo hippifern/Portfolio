@@ -4,23 +4,23 @@ $highlightcolorAlt: #ff98db;
 $whitecolor: #fcfcfc;
 $blackcolor: #292929;
 $gradient: linear-gradient(
-  16deg,
-  rgba(199, 255, 180, 1) 0%,
-  rgba(255, 152, 219, 1) 100%
+    16deg,
+    rgba(199, 255, 180, 1) 0%,
+    rgba(255, 152, 219, 1) 100%
 );
 $gradientInvert: linear-gradient(
-  192deg,
-  rgba(199, 255, 180, 1) 0%,
-  rgba(255, 152, 219, 1) 100%
+    192deg,
+    rgba(199, 255, 180, 1) 0%,
+    rgba(255, 152, 219, 1) 100%
 );
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -29,32 +29,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cal Sans", sans-serif;
+    font-family: "Cal Sans", sans-serif;
 }
 p,
 a,
 li {
-  font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .app-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $whitecolor;
-  .app {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1%;
-    max-width: 1300px;
-  }
+    background-color: $whitecolor;
+    .app {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        max-width: 1300px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-  .app-container {
-    padding: 5%;
-  }
+    .app-container {
+        padding: 5%;
+    }
 }

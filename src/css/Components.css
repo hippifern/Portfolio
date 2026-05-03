@@ -55,6 +55,16 @@
   font-size: 1rem;
 }
 
+.scrollbar {
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  z-index: 3;
+}
+
 .hero {
   width: 100%;
   padding-top: 10%;
@@ -351,16 +361,14 @@
   height: 35px;
   width: 35px;
   border-radius: 5px;
-  transition: all 0.1s ease;
-}
-.icon-button:hover {
-  transform: translateY(-1px);
-  height: 37px;
-  padding-bottom: 0.25%;
-  border-top: 1px solid #c7ffb4;
-  border-left: 1px solid #c7ffb4;
-  border-right: 1px solid #c7ffb4;
-  background-color: #c7ffb4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  touch-action: none;
 }
 .icon-button .button {
   height: 100%;
@@ -380,16 +388,37 @@
   height: 50%;
   width: 50%;
   filter: invert(100%);
+  pointer-events: none;
+}
+
+.icon-button-alt {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+.icon-button-alt .button {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #292929;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-button-alt .button:hover {
+  background: linear-gradient(16deg, rgb(199, 255, 180) 0%, rgb(255, 152, 219) 100%);
+}
+.icon-button-alt .button img {
+  height: 50%;
+  width: 50%;
+  filter: invert(100%);
 }
 
 .icon-button-large {
   height: 55px;
   width: 55px;
-}
-.icon-button-large:hover {
-  transform: translateY(-3px);
-  padding-bottom: 1%;
-  height: 60px;
 }
 
 .linkable-icon-button .icon-button .button {

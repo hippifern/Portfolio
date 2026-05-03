@@ -21,7 +21,6 @@ import motionIcon from "../assets/motion.png";
 export const Work = () => {
     return (
         <div className="work-container" id="work">
-            <h3>Work.</h3>
             <div className="project-cards-container">
                 <ProjectCard
                     imgSrc={imgOne}
