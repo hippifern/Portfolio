@@ -1,6 +1,6 @@
-// src/PhysicsSimulation.js
+// @ts-nocheck
 import { useEffect, useRef } from "react";
-import { IconButton } from "./IconButton";
+import { IconButton } from "./IconButton.tsx";
 import { useScreenSize } from "../hooks/useScreenSize.tsx";
 import Matter from "matter-js";
 import react from "../assets/react.png";

@@ -5,7 +5,7 @@ type IconButtonProps = {
     linkable: boolean;
     link: string;
     large: boolean;
-    ref: any;
+    ref?: React.Ref<HTMLDivElement> | undefined;
 };
 
 export const IconButton = ({

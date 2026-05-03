@@ -1,5 +1,5 @@
 import "../css/Components.css";
-import PhysicsSimulation from "./PhysicsScene.jsx";
+import PhysicsSimulation from "./PhysicsScene";
 
 export const About = () => {
     return (
